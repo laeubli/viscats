@@ -7,6 +7,7 @@
    <link rel="stylesheet" type="text/css" href="css/grid.css"/>
    <link rel="stylesheet" type="text/css" href="css/plot.css"/>
    <script type="text/javascript" src="d3/d3.js"></script>
+   <script type="text/javascript" src="d3/d3-tip.js"></script>
    <script type="text/javascript" src="lib/viscats.js"></script>
 </head>
 <body>
@@ -18,43 +19,18 @@
 	</div>
 
 	<div id="main" class="container">
-		<div id="main_content" class="content more_space_above">
-
-			<!-- sample block element structure that will be created by the translationSession() widget -->
-			<div class="viscats_item">
-				<div class="viscats_item_title">
-					<div class="viscats_item_content">
-					Title of this funny process
-					</div>
-				</div>
-				<div class="viscats_item_state_distribution"> <!-- Note: this container must go before .viscats_item_timeline, even though it's positioned on the right side of the screen. -->
-					<div class="viscats_item_content">
-					Here go the bars.
-					</div>
-				</div>
-				<div class="viscats_item_timeline">
-					<div class="viscats_item_content">
-					Here goes the timeline.
-					</div>
-				</div>
-				<div class="viscats_item_description">
-					<div class="viscats_item_content">
-					Here goes the description of that plot. What a plot.
-					</div>
-				</div>
-			</div>
-			<!-- end sample block element structure -->
+		<div id="main_content" class="content">
 
 		</div>
 	</div>
 
 	<div id="footer" class="container">
-		<div class="content moreSpaceAbove">
-			<p>viscats alpha</p>
+		<div class="content">
+			<p><span style="font-style:italic;">viscats</span> alpha</p>
 		</div>
 	</div>
 
-	<!-- TEST -->
+	<!-- add timelines -->
 	<script type="text/javascript">
 		var session1 = translationSession()
 			.title('The new visualised session')

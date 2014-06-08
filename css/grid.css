@@ -2,8 +2,8 @@
 
 /* Colour palette:
 
-	#FBFBF9	Very Light Grey	(background)
-	#90AFBA Middle Blue 	(lines, borders, etc.)
+	#eee	Very Light Grey	(background)
+	#ccc 	Light Grey 		(lines, borders, etc.)
 	#476D7A Dark Blue		(marked lines, borders, etc.)
 	#140801	Quasi Black		(main text)
 	#ED9631	Yellow Orange	(links, highlighted text)
@@ -13,7 +13,7 @@
 /* === General === */
 
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: Georgia, "Times New Roman", serif;
 	color: #140801;
 	font-size: 0.95em;
 }
@@ -42,13 +42,13 @@ p {
 /* === Header === */
 
 #header {
-	background-color: #FBFBF9;
-	border-bottom: 3px solid #90AFBA;
+	background-color: #eee;
+	border-bottom: 3px solid #ccc;
 }
 
 #header h1 {
 	font-size: 1.35em;
-	color: #476D7A;
+	font-style: italic;
 }
 
 /* === Content Area === */
@@ -58,36 +58,54 @@ p {
 }
 
 .viscats_item { /* Overall container for one visualised translation session. Can be stacked. */
-	background-color: pink; /* just temporarily */
+	/* background-color: pink; /* just temporarily */
 	width: 100%;
 	min-height: 120px;
+	margin-top: 40px;
 	margin-bottom: 16px;
 }
 
 .viscats_item_title { /* The part above the plots inside .viscats_item */
-	background-color: goldenrod; /* just temporarily */
+	/* background-color: goldenrod; /* just temporarily */
 	width: 100%;
+	margin-bottom: 10px;
+	background-color: #eee;
+	border-top: 1px dotted #ccc;
+}
+
+.viscats_item_title .title {
 	font-size: 1.1em;
-	font-weight: bold;
+	font-variant: small-caps;
+}
+
+.viscats_item_title .title_extension {
+	font-size: 0.9em;
+	color: #666;
+	float: right;
+}
+
+.viscats_item_description { /* The part underneath the plots inside .viscats_item */
+	/* background-color: lightsteelblue; /* just temporarily */ 
+	width: 100%;
+	background-color: #eee;
+	margin-top: -20px;
+	margin-bottom: 16px;
+	font-size: 0.9em;
+	color: #666;
 }
 
 .viscats_item_state_distribution { /* The right part inside .viscats_item */
-	background-color: lavender; /* just temporarily */
+	/* background-color: lavender; /* just temporarily */
 	float: right;
 	min-width: 60px;
 	height: 120px;
 }
 
 .viscats_item_timeline { /* The left part inside .viscats_item */
-	background-color: lightblue; /* just temporarily */
+	/* background-color: lightblue; /* just temporarily */
 	height:100%;
 	width: auto;
 	height: 120px;
-}
-
-.viscats_item_description { /* The part underneath the plots inside .viscats_item */
-	background-color: lightsteelblue; /* just temporarily */ 
-	width: 100%;
 }
 
 .viscats_item_content { /* Defines content area inside both .viscats_item_timeline and .viscats_item_state_distribution */
@@ -97,7 +115,7 @@ p {
 /* === Footer === */
 
 #footer {
-	color: #90AFBA;
+	color: #bbb;
 	font-size: 0.8em;
 	text-align: center;
 }

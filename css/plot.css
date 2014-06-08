@@ -5,18 +5,37 @@
 
 */
 
+/* === Bar Chart === */
+
 .barchart {
-	background-color: white;
+	
 }
 
 .barchart rect {
-	fill: steelblue;
+	
 }
 
 .barchart text {
 	font: 10px sans-serif;
 	text-anchor: end;
 }
+
+/* === Timeline === */
+
+.timeline {
+	background-color: white;
+}
+
+.timeline rect {
+	
+}
+
+.timeline text {
+	font: 10px sans-serif;
+	text-anchor: end;
+}
+
+/* === Axes === */
 
 .axis text {
 	font: 10px sans-serif;
@@ -27,4 +46,15 @@
 	fill: none;
 	stroke: #000;
 	shape-rendering: crispEdges;
+}
+
+/* === Tooltip === */
+
+.tooltip { /* TODO */
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
 }
