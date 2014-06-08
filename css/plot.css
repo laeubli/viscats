@@ -1,0 +1,30 @@
+/* Styles the elements used in the timeline and state distribution plots (bars, etc.) */
+/* Note: includes SVG properties where appropriate (e.g., 'fill' instead of 'background-color') */
+
+/* Colour palette:
+
+*/
+
+.barchart {
+	background-color: white;
+}
+
+.barchart rect {
+	fill: steelblue;
+}
+
+.barchart text {
+	font: 10px sans-serif;
+	text-anchor: end;
+}
+
+.axis text {
+	font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}

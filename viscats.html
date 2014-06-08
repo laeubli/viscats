@@ -4,8 +4,10 @@
    <meta charset="utf-8">
    <title>viscats</title>
    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
-   <link rel="stylesheet" type="text/css" href="css/viscats_grid.css"/>
+   <link rel="stylesheet" type="text/css" href="css/grid.css"/>
+   <link rel="stylesheet" type="text/css" href="css/plot.css"/>
    <script type="text/javascript" src="d3/d3.js"></script>
+   <script type="text/javascript" src="lib/viscats.js"></script>
 </head>
 <body>
 
@@ -16,8 +18,9 @@
 	</div>
 
 	<div id="main" class="container">
-		<div class="content more_space_above">
+		<div id="main_content" class="content more_space_above">
 
+			<!-- sample block element structure that will be created by the translationSession() widget -->
 			<div class="viscats_item">
 				<div class="viscats_item_title">
 					<div class="viscats_item_content">
@@ -31,7 +34,7 @@
 				</div>
 				<div class="viscats_item_timeline">
 					<div class="viscats_item_content">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Here goes the timeline.
 					</div>
 				</div>
 				<div class="viscats_item_description">
@@ -40,11 +43,8 @@
 					</div>
 				</div>
 			</div>
+			<!-- end sample block element structure -->
 
-			<div class="viscats_item">
-			</div>
-
-			<p>This is a <a href="#">link</a>. And some normal text just to illustrate what it would look like. Magic.</p>
 		</div>
 	</div>
 
@@ -53,6 +53,14 @@
 			<p>viscats alpha</p>
 		</div>
 	</div>
+
+	<!-- TEST -->
+	<script type="text/javascript">
+		var session1 = translationSession()
+			.title('The new visualised session')
+			.description("This block has a description. If I don't specify one, the description block will not be added.");
+		session1.appendTo('#main_content');
+	</script>
 
 </body>
 </html>

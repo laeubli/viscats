@@ -74,7 +74,7 @@ p {
 .viscats_item_state_distribution { /* The right part inside .viscats_item */
 	background-color: lavender; /* just temporarily */
 	float: right;
-	min-width: 120px;
+	min-width: 60px;
 	height: 120px;
 }
 
