@@ -9,6 +9,7 @@
    <script type="text/javascript" src="d3/d3.js"></script>
    <script type="text/javascript" src="d3/d3-tip.js"></script>
    <script type="text/javascript" src="lib/viscats.js"></script>
+   <script type="text/javascript" src="lib/file_selector.js"></script>
 </head>
 <body>
 
@@ -24,18 +25,30 @@
 		</div>
 	</div>
 
+	<div id="select_file" class="container">
+		<div id="main_content" class="content">
+			<div id="drag_and_drop_area">
+					<p>drop <span style="font-style:italic;">segcats</span> CSV file here or</p>
+					<input type="file" id="browse_file_button" name="file" />
+			</div>
+		</div>
+	</div>
+
 	<div id="footer" class="container">
 		<div class="content">
 			<p><span style="font-style:italic;">viscats</span> alpha</p>
 		</div>
 	</div>
 
-	<!-- add timelines -->
+	<!-- add event listeners -->
 	<script type="text/javascript">
-		var session1 = translationSession('sample_data.csv')
-			.title('The new visualised session')
-			.description("This block has a description. If I don't specify one, the description block will not be added.");
-		session1.appendTo('#main_content');
+		// file browser
+		document.getElementById('browse_file_button')
+			.addEventListener('change', handleFileSelect, false);
+		// file drag and drop
+		var drop_zone = document.getElementById('drag_and_drop_area');
+		drop_zone.addEventListener('dragover', handleDragOver, false);
+		drop_zone.addEventListener('drop', handleFileDrop, false);
 	</script>
 
 </body>

@@ -75,7 +75,6 @@ p {
 
 .viscats_item_title .title {
 	font-size: 1.1em;
-	font-variant: small-caps;
 }
 
 .viscats_item_title .title_extension {
@@ -110,6 +109,37 @@ p {
 
 .viscats_item_content { /* Defines content area inside both .viscats_item_timeline and .viscats_item_state_distribution */
 	padding: 10px;
+}
+
+/* === File selection === */
+
+#select_file {
+	margin-top: 60px;
+}
+
+#drag_and_drop_area {
+	height: 70px;
+	border: 1px dashed #ccc;
+	/* border-radius: 10px; /* rounded corners */
+	padding: 20px;
+	line-height: 34px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#drag_and_drop_area:hover {
+	background-color: #F7F7F7;
+}
+
+#browse_file_button {
+	border: 1px solid #999;
+	padding: 6px 12px 6px 12px;
+	background-color: #eee;
+	cursor: pointer;
+}
+
+#browse_file_button:hover {
+	background-color: #ddd;
 }
 
 /* === Footer === */
