@@ -13,7 +13,7 @@ Note that viscats requires no web server architecture. You can simply open `visc
 
 ### File Format
 
-viscats is designed to visualise CSV files as created by [segcats](https://github.com/laeubli/segcats), but you can use it to visualise any CSV encoded time series data. Make sure that the CSV has the following three rows:
+viscats is designed to visualise CSV files as created by [segcats](https://github.com/laeubli/segcats), but you can use it to visualise any CSV encoded time series data. Make sure that your CSV file has the following three rows:
 
 * `start`: the POSIX timestamp denoting the start of an event/phase (see http://en.wikipedia.org/wiki/Unix_time)
 * `end`: the POSIX timestamp denoting the end of an event/phase
@@ -32,4 +32,4 @@ start,end,state
 ...
 ```
 
-Please feel free to use the two sample files that ship with viscats: `sample_short.csv` and `sample_long.csv`.
+Please feel free to use the two sample files that ship with viscats for testing: `sample_short.csv` and `sample_long.csv`.
