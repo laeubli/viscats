@@ -23,9 +23,13 @@ The CSV file can contain any number of other columnts, which viscats will simply
 
 #### Sample CSV File
 
+```
 start,end,state
 1402483122015,1402483122515,H1
 1402483122515,1402483123015,H3
 1402483123015,1402483123515,H2
 1402483123515,1402483124015,H2
 ...
+```
+
+Please feel free to use the two sample files that ship with viscats: `sample_short.csv` and `sample_long.csv`.
